@@ -1,4 +1,5 @@
 [custom]
+;DNS防泄露：支持，(需要把漏网之鱼上面的一条改成 全球直连,[]GEOIP,CN,no-resolve)
 
 ; 设置规则标志位
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
