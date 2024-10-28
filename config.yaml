@@ -86,7 +86,7 @@ rules:
   - RULE-SET,geolocation-!cn,🚀 节点选择
   - RULE-SET,cn_domain,🎯 全球直连
   - RULE-SET,google_ip,🦄 Google,no-resolve
-  - RULE-SET,netflix_ip,🎥 NETFLIX,no-resolve,no-resolve
+  - RULE-SET,netflix_ip,🎥 NETFLIX,no-resolve
   - RULE-SET,telegram_ip,👻 Telegram,no-resolve
   - RULE-SET,cn_ip,🎯 全球直连
   - MATCH,🐠 漏网之鱼
