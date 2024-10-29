@@ -19,7 +19,7 @@ proxy-providers:
     url: "订阅链接2"
 
 # 用于下载订阅时指定UA
-global-ua: clash
+global-ua: clash.meta
 
 unified-delay: true
 tcp-concurrent: true
