@@ -18,6 +18,8 @@ proxy-providers:
     proxy: 🟢 直连
     url: "订阅链接2"
 
+# 用于下载订阅时指定UA
+global-ua: clash
 
 unified-delay: true
 tcp-concurrent: true
