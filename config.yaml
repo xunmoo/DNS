@@ -29,7 +29,6 @@ tcp-concurrent: true
 # 进程匹配模式
 find-process-mode: strict
 # 缓解移动设备耗电问题
-# https://github.com/vernesong/OpenClash/issues/2614
 keep-alive-interval: 1800
 # 全局客户端指纹
 global-client-fingerprint: random # 随机指纹
