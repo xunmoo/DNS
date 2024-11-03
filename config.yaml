@@ -20,10 +20,24 @@ proxy-providers:
 
 # 用于下载订阅时指定UA
 global-ua: clash.meta
-
+# 统一延迟
+# 更换延迟计算方式,去除握手等额外延迟
 unified-delay: true
+# TCP 并发
+# 同时对所有ip进行连接，返回延迟最低的地址
 tcp-concurrent: true
-global-client-fingerprint: chrome
+# 进程匹配模式
+find-process-mode: strict
+# 缓解移动设备耗电问题
+# https://github.com/vernesong/OpenClash/issues/2614
+keep-alive-interval: 1800
+# 全局客户端指纹
+global-client-fingerprint: random # 随机指纹
+# 缓存
+profile:
+  store-selected: true
+  store-fake-ip: true
+# 域名嗅探
 sniffer:
   enable: true
   sniff:
