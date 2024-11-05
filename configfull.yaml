@@ -62,8 +62,6 @@ sniffer:
       ports: [443, 8443]
     QUIC:
       ports: [443, 8443]
-  force-domain:
-    - +.v2ex.com
   skip-domain:
     - "+.lan"
     - "+.local"
@@ -84,7 +82,7 @@ tun:
 # DNS模块
 dns:
   enable: true
-  listen: 0.0.0.0:1053
+  listen: 0.0.0.0:7874
   ipv6: true
   respect-rules: true
   # 模式切换 redir-host / fake-ip
@@ -114,7 +112,6 @@ dns:
     "rule-set:geolocation-!cn":
       - "https://dns.cloudflare.com/dns-query"
       - "https://dns.google/dns-query"
- 
    
 proxies:
 - name: "🟢 直连"
