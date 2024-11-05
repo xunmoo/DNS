@@ -124,10 +124,10 @@ proxy-groups:
   - {name: 🚀 节点选择, type: select, proxies: [♻️ 自动选择, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🇰🇷 韩国节点, 🌐 全部节点, 🟢 直连]}
   - {name: 🤡 YouTube, <<: *pr}
   - {name: 🦄 Google, <<: *pr}
-  - {name: 💬 ChatGPT, <<: *pr}
+  - {name: 👽 ChatGPT, <<: *pr}
   - {name: 📖 GitHub, <<: *pr}
   - {name: 🐬 OneDrive, <<: *pr}
-  - {name: 👽 Microsoft, <<: *pr}
+  - {name: 🐔 Microsoft, <<: *pr}
   - {name: 🎵 TikTok, <<: *pr}
   - {name: 👻 Telegram, <<: *pr}
   - {name: 🎥 NETFLIX, <<: *pr}
@@ -147,12 +147,12 @@ proxy-groups:
 rules:
   - RULE-SET,private_domain,🟢 直连
   - RULE-SET,apple_domain,🍎 Apple
-  - RULE-SET,ai_domain,💬 ChatGPT
+  - RULE-SET,ai_domain,👽 ChatGPT
   - RULE-SET,github_domain,📖 GitHub
   - RULE-SET,youtube_domain,🤡 YouTube
   - RULE-SET,google_domain,🦄 Google
   - RULE-SET,onedrive_domain,🐬 OneDrive
-  - RULE-SET,microsoft_domain,👽 Microsoft
+  - RULE-SET,microsoft_domain,🐔 Microsoft
   - RULE-SET,tiktok_domain,🎵 TikTok
   - RULE-SET,speedtest_domain,✈️ Speedtest
   - RULE-SET,telegram_domain,👻 Telegram
