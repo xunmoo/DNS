@@ -118,10 +118,10 @@ proxies:
   type: direct
   udp: true
 
-pr: &pr {type: select, proxies: [🚀 节点选择, ♻️ 自动选择, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🇰🇷 韩国节点, 🌐 全部节点, 🟢 直连]}
+pr: &pr {type: select, proxies: [🚀 节点选择, ♻️ 自动选择, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点, 🟢 直连]}
 
 proxy-groups:
-  - {name: 🚀 节点选择, type: select, proxies: [♻️ 自动选择, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🇰🇷 韩国节点, 🌐 全部节点, 🟢 直连]}
+  - {name: 🚀 节点选择, type: select, proxies: [♻️ 自动选择, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🌐 全部节点, 🟢 直连]}
   - {name: 🤡 YouTube, <<: *pr}
   - {name: 🦄 Google, <<: *pr}
   - {name: 👽 ChatGPT, <<: *pr}
@@ -141,7 +141,6 @@ proxy-groups:
   - {name: 🇺🇲 美国节点, type: url-test, include-all: true, tolerance: 50, interval: 180, filter: "(?i)美|us|unitedstates|united states"}
   - {name: 🇨🇳 台湾节点, type: url-test, include-all: true, tolerance: 50, interval: 180, filter: "(?i)台|新北|彰化|TW|Taiwan"}
   - {name: 🇸🇬 狮城节点, type: url-test, include-all: true, tolerance: 50, interval: 180, filter: "(?i)新加坡|坡|狮城|SG|Singapore"}
-  - {name: 🇰🇷 韩国节点, type: url-test, include-all: true, tolerance: 50, interval: 180, filter: "(?i)KR|Korea|KOR|首尔|韩|韓|🇰🇷|Incheon"}
   - {name: ♻️ 自动选择, type: url-test, include-all: true, tolerance: 50, interval: 180, filter: "^((?!(直连)).)*$"}
   - {name: 🌐 全部节点, type: select, include-all: true}
 rules:
@@ -192,3 +191,4 @@ rule-providers:
   google_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.mrs" }
   telegram_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs" }
   netflix_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.mrs" }
+  twitter_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/twitter.mrs" }
