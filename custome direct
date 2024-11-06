@@ -5,3 +5,5 @@ DOMAIN-KEYWORD,kaspersky-labs
 
 # 域名后缀匹配
 DOMAIN-SUFFIX,kaspersky.com
+
+IP-CIDR,119.29.29.29
