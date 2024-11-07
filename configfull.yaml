@@ -135,6 +135,7 @@ proxy-groups:
   - {name: 🍎 Apple, type: select, proxies: [🟢 直连, 🚀 节点选择]}
   - {name: 🎯 全球直连, type: select, proxies: [🟢 直连, 🚀 节点选择]}
   - {name: ⛔ 漏网之鱼, <<: *pr}
+  
   - {name: 香港节点, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?i)港|hk|hongkong|hong kong"}
   - {name: 日本节点, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?i)日|jp|japan"}
   - {name: 美国节点, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?i)美|us|unitedstates|united states"}
@@ -155,8 +156,9 @@ rules:
   - RULE-SET,telegram_domain,👻 Telegram
   - RULE-SET,netflix_domain,🎥 NETFLIX
   - RULE-SET,paypal_domain,💶 PayPal
-  - RULE-SET,geolocation-!cn,🚀 节点选择
   - RULE-SET,cn_domain,🎯 全球直连
+  - RULE-SET,geolocation-!cn,🚀 节点选择
+  
   - RULE-SET,google_ip,🦄 Google,no-resolve
   - RULE-SET,netflix_ip,🎥 NETFLIX,no-resolve
   - RULE-SET,telegram_ip,👻 Telegram,no-resolve
