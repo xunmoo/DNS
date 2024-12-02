@@ -65,6 +65,8 @@ sniffer:
   skip-domain:
     - "Mijia Cloud"
     - "+.push.apple.com"
+    - "+.apple.com"
+    - "+.kaspersky-labs.com"
     
 # 代理模式
 tun:
