@@ -83,20 +83,17 @@ tun:
 # DNS模块
 dns:
   enable: true
-  listen: 0.0.0.0:7874
+  listen: 0.0.0.0:1053
   ipv6: true
   respect-rules: true
-  # 模式切换 redir-host / fake-ip
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  # 模式切换 whitelist/blacklist 
-  # 黑名单模式表示如果匹配成功则不返回 Fake-IP, 白名单模式时只有匹配成功才返回 Fake-IP
-  fake-ip-filter-mode: blacklist
   fake-ip-filter:
     - "+.lan"
     - "+.local"
-    - geosite:private
-    - geosite:cn
+    - "+.market.xiaomi.com"
+    - "geosite:private"
+    - "geosite:cn"
   default-nameserver:
     - 223.5.5.5
     - 119.29.29.29
