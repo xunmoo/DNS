@@ -132,7 +132,7 @@ proxy-groups:
   - {name: ✈️ Speedtest, <<: *pr}
   - {name: 🕊️ Twitter, <<: *pr}
   - {name: 🍎 Apple, type: select, proxies: [🟢 直连, 🚀 节点选择]}
-  - {name: 🎯 全球直连, type: select, proxies: [🟢 直连, 🚀 节点选择]}
+  - {name: 🎯 国内, type: select, proxies: [🟢 直连, 🚀 节点选择]}
   - {name: ⛔ 漏网之鱼, <<: *pr}
   
   - {name: 香港节点, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?i)港|hk|hongkong|hong kong"}
@@ -155,14 +155,14 @@ rules:
   - RULE-SET,telegram_domain,👻 Telegram
   - RULE-SET,netflix_domain,🎥 NETFLIX
   - RULE-SET,twitter_domain,🕊️ Twitter
-  - RULE-SET,cn_domain,🎯 全球直连
+  - RULE-SET,cn_domain,🎯 国内
   - RULE-SET,geolocation-!cn,🚀 节点选择
   
   - RULE-SET,google_ip,🦄 Google,no-resolve
   - RULE-SET,netflix_ip,🎥 NETFLIX,no-resolve
   - RULE-SET,telegram_ip,👻 Telegram,no-resolve
   - RULE-SET,twitter_ip,🕊️ Twitter,no-resolve
-  - RULE-SET,cn_ip,🎯 全球直连
+  - RULE-SET,cn_ip,🎯 国内
   - MATCH,⛔ 漏网之鱼
 rule-anchor:
   ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: mrs}
