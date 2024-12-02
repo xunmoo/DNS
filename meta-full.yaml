@@ -63,9 +63,8 @@ sniffer:
     QUIC:
       ports: [443, 8443]
   skip-domain:
-    - "+.lan"
-    - "+.local"
-    - geosite:cn
+    - "Mijia Cloud"
+    - "+.push.apple.com"
     
 # 代理模式
 tun:
