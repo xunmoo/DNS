@@ -131,10 +131,6 @@ proxy-groups:
     type: select
     proxies: [🚀 节点选择, 自动选择, 香港节点, 台湾节点, 日本节点, 狮城节点, 美国节点, 全部节点, 🟢 直连]
 
-  - name: 🍎 Apple
-    type: select
-    proxies: [🟢 直连, 🚀 节点选择, 自动选择, 香港节点, 台湾节点, 日本节点, 狮城节点, 美国节点, 全部节点]
-
   - name: 🎯 国内
     type: select
     proxies: [🟢 直连, 🚀 节点选择, 自动选择, 香港节点, 台湾节点, 日本节点, 狮城节点, 美国节点, 全部节点]
@@ -192,7 +188,6 @@ proxy-groups:
 
 rules:
   - RULE-SET,private_domain,🟢 直连,no-resolve
-  - RULE-SET,apple_domain,🍎 Apple
   - RULE-SET,ai_domain,👽 ChatGPT
   - RULE-SET,github_domain,📖 GitHub
   - RULE-SET,youtube_domain,🤡 YouTube
@@ -231,7 +226,6 @@ rule-providers:
   amazon_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/amazon.mrs" }
   alibaba_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/alibaba.mrs" }
   microsoft_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs" }
-  apple_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-cn.mrs" }
   speedtest_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ookla-speedtest.mrs" }
   tiktok_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs" }
   geolocation-!cn: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs" }
